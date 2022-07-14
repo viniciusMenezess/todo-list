@@ -1,11 +1,20 @@
-import { Container } from './styles'
+import { Wrapper } from './styles'
 
 import { Header } from '../../components/Header'
+import { Input } from '../../components/Input'
+import { Button } from '../../components/Button'
 
 export function Home() {
   return (
-    <Container>
+    <>
       <Header />
-    </Container>
+
+      <Wrapper>
+        <div>
+          <Input placeholder="Adicione uma nova tarefa" />
+          <Button />
+        </div>
+      </Wrapper>
+    </>
   )
 }

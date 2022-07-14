@@ -11,9 +11,15 @@ export const GlobalStyle = createGlobalStyle`
     font-size:62.5%;
   }
 
+  :focus {
+    outline: transparent;
+    box-shadow: 0 0 0 2px ${props => props.theme.colors.PURPLE_DARK}
+  }
+
   body {
     background: ${props => props.theme.colors.GRAY_600};
     color: ${props => props.theme.colors.WHITE};
+    -webkit-font-smoothing: antialiased;
   }
   
   body, textarea, button, input {
@@ -22,16 +28,8 @@ export const GlobalStyle = createGlobalStyle`
     line-height: 140%;
   } 
 
-  a {
-    text-decoration: none;
-  }
-
-  button, a {
+  button {
     cursor:pointer;
-    transition: filter .2s
-  }
-
-  button:hover, a:hover {
-    filter: brightness(0.9)
+    transition: .2s
   }
 `
