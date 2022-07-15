@@ -13,7 +13,7 @@ export const Container = styled.div`
 
     color: ${props => props.theme.colors.GRAY_100};
 
-    border: 0;
+    border: 1px solid ${props => props.theme.colors.GRAY_700};
 
     &::placeholder {
       color: ${props => props.theme.colors.GRAY_300};
